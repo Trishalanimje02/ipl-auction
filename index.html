@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Auction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="budget-board">
+
+    <div class="team-box" id="RCB-box">RCB: ₹ <span id="RCB-money">20</span> Cr</div>
+    <div class="team-box" id="MI-box">MI: ₹ <span id="MI-money">20</span> Cr</div>
+    <div class="team-box" id="CSK-box">CSK: ₹ <span id="CSK-money">20</span> Cr</div>
+    <div class="team-box" id="GT-box">GT: ₹ <span id="GT-money">20</span> Cr</div>
+    <div class="team-box" id="SRH-box">SRH: ₹ <span id="SRH-money">20</span> Cr</div>
+
+</div>
+
+<div class="card">
+
+    <div class="left">
+        <img id="playerImg">
+    </div>
+
+    <div class="right">
+
+        <input type="text" id="searchBox" placeholder="🔍 Search player..." onkeyup="searchPlayer()">
+
+        <h2 id="playerName"></h2>
+
+        <h3>💰 Base Price: ₹2 Cr</h3>
+        <h3>🔥 Current Bid: ₹ <span id="price">2</span> Cr</h3>
+
+        <h3>
+            🏏 Team: <span id="team"></span>
+            <img id="teamLogo" width="30">
+        </h3>
+
+        <h3>⏳ Timer: <span id="timer">10</span>s</h3>
+
+        <div class="team-buttons">
+            <button onclick="manualBid('RCB')">RCB</button>
+            <button onclick="manualBid('MI')">MI</button>
+            <button onclick="manualBid('CSK')">CSK</button>
+            <button onclick="manualBid('GT')">GT</button>
+            <button onclick="manualBid('SRH')">SRH</button>
+        </div>
+
+        <h3 id="result"></h3>
+
+        <button onclick="nextPlayer()">Next ⏭️</button>
+        <button onclick="resetAuction()">Reset 🔄</button>
+
+    </div>
+
+</div>
+<h2 style="color:white; text-align:center;">📋 Sold Players</h2>
+
+<table id="soldTable">
+    <tr>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Logo</th>
+        <th>Price (Cr)</th>
+    </tr>
+</table>
+
+</div>
+
+<!-- ✅ MOST IMPORTANT -->
+<script src="script.js"></script>
+
+</body>
+</html>

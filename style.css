@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* Center */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    display: flex;
+    width: 850px;
+    height: 450px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Left */
+.left {
+    width: 40%;
+    background: black;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right */
+.right {
+    width: 60%;
+    padding: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Team colors */
+.team-buttons button:nth-child(1){background:red;color:white;}
+.team-buttons button:nth-child(2){background:blue;color:white;}
+.team-buttons button:nth-child(3){background:gold;color:black;}
+.team-buttons button:nth-child(4){background:purple;color:white;}
+.team-buttons button:nth-child(5){background:orange;color:white;}
+
+#searchBox {
+    padding: 6px;
+    width: 90%;
+    border-radius: 8px;
+}
+/* Budget Board */
+.budget-board {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.team-box {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Team colors */
+#RCB-box { background: red; }
+#MI-box { background: blue; }
+#CSK-box { background: gold; color:black; }
+#GT-box { background: purple; }
+#SRH-box { background: orange; }
+#soldTable {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #0f172a;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+#soldTable th {
+    background: black;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#soldTable td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+#soldTable img {
+    width: 40px;
+}
+
+/* 🔥 Neon Team Colors */
+.RCB-row {
+    background: rgba(255,0,0,0.1);
+    box-shadow: inset 0 0 10px red;
+}
+
+.MI-row {
+    background: rgba(0,0,255,0.1);
+    box-shadow: inset 0 0 10px blue;
+}
+
+.CSK-row {
+    background: rgba(255,215,0,0.1);
+    box-shadow: inset 0 0 10px gold;
+    color: black;
+}
+
+.GT-row {
+    background: rgba(128,0,128,0.1);
+    box-shadow: inset 0 0 10px purple;
+}
+
+.SRH-row {
+    background: rgba(255,165,0,0.1);
+    box-shadow: inset 0 0 10px orange;
+}
